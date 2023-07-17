@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/7784482.png">
+  
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <title>Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+
+  
+
+    <div class="container">
+      <div class="cards">
+        <div class="img2">
+          <h2 id="date">000</h2>
+        </div>
+        <div class="img">
+          <img src="./images/card-logo.svg" alt="">
+          <div class="texts">
+          <h1 id="holder-number">0000 0000 0000 0000</h1>
+          <div class="paragraph">
+            <p class="p1">Jane Appleseed</p>
+            <p class="p2"> 00/00</p>
+          </div>
+          </div>
+        </div>
+     
+   
+      </div>
+      <div class="cls1"></div>
+      <div class="cls2"></div>
+      <div class="cls3"></div>
+      <div class="conatainer2">
+        <form action="#">
+          <div class="inputs1">
+          <label for="inp1">Cardholder Name</label>
+          <input type="text" id="inp1" placeholder=" e.g. Jane Appleseed">
+          <label for="inp2">Card Number</label>
+          <input type="text" id="inp2" placeholder="e.g. 1234 5678 9123 0000">
+          <p id="error">Wrong format, numbers only</p>
+          </div>
+
+          <div class="labels">
+                    <label for="inp6">Exp. Date (MM/YY)</label>
+                    <label for="inp5">CVC</label>
+          </div>
+
+          <div class="numbersInput">
+            <input type="number" id="inp6" placeholder="MM" maxlength="2">
+            <input type="number" id="inp4" placeholder="YY" maxlength="4">
+            <input type="number" id="inp5" placeholder=" e.g. 123" maxlength="4">
+            
+          </div>
+          <div class="errors">
+            <p id="error2">Cant`t be blank</p>
+            <p id="error3">Cant`t be blank</p>
+          </div>    
+          <div class="btnCon">
+            <input type="submit" id="btn" value="Confirm">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container3">
+      <div class="cards2">
+        <div class="img">
+          <img src="./images/icon-complete.svg" alt="">
+        </div>
+          <div class="texts">
+          <h1>thanks You !</h1>
+          <p>We`ve added your card details</p>
+          <div class="button">
+            <input type="submit" id="btn2" value="Continue">
+          </div>
+          </div>
+        </div>
+    </div>
+ 
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./script.js"></script>
+</body>
+</html>
